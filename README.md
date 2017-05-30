@@ -58,16 +58,4 @@ two files, and build a report which shows the discrepancies.
 
 Look at this file - [expected api response](expected-api-responses.json)
 
-## Questions and clarifications:
 
-If you have questions about the code puzzle, email stephon@stapleslabs.com for
-clarifications.
-
-## Solution Submission
-
-Fork the project, and send an email to careers@stapleslabs.com once you're done.
-
-There are no points given for speed, so please take as much time as you desire,
-so that you can submit your best work.
-
-Have fun! :)
