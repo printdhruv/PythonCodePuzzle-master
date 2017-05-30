@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+SELF=$(find $PWD -name $(basename $0))
+BASEDIR=$(dirname $SELF)/..
+
+if [ -z $(which python) -o -z $(which virtualenv) -o -z $(which pip) ]; then
+    echo "Make sure you have python, pip, and virtualenv installed."
+    exit -1
+fi
+
+if [ ! -d ${BASEDIR}/.pyenv ]; then
+    virtualenv --no-site-packages ${BASEDIR}/.pyenv \
+        && source ${BASEDIR}/.pyenv/bin/activate \
+        && ${BASEDIR}/.pyenv/bin/pip install -r ${BASEDIR}/bin/requirements.txt
+fi
+

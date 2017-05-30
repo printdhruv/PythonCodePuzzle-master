@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+SELF=$(find $PWD -name $(basename $0))
+BASEDIR=$(dirname $SELF)/..
+
+${BASEDIR}/bin/pyenv
+. ${BASEDIR}/.pyenv/bin/activate
+
+${BASEDIR}/.pyenv/bin/python ${BASEDIR}/code_puzzle/server.py
